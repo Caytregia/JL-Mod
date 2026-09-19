@@ -46,6 +46,11 @@ android {
             keyPassword = secret.getProperty("keyPassword")
             storeFile = rootProject.file(secret.getProperty("storeFile"))
             storePassword = secret.getProperty("storePassword")
+        } else {
+            storeFile = file(System.getProperty("user.home") + "/.android/debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
         }
     }
 
