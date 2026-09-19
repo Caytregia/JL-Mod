@@ -16,5 +16,5 @@ dependencyResolutionManagement {
         maven("https://jitpack.io")
     }
 }
-rootProject.name = "JL-Mod Test"
+rootProject.name = "JL-Mod"
 include(":app", ":dexlib")
